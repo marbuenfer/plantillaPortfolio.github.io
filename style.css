@@ -1,0 +1,368 @@
+/*Barra de navegación*/
+.navbar {
+  padding: 2rem;
+  background-color: #f5f6f7;
+}
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero {
+  background-color: rgb(252, 246, 246);
+  min-height: 450px;
+  text-align: center;
+}
+.hero-principal {
+  padding: 3rem;
+}
+.hero-principal h2 {
+  font-size: 1.8rem;
+  color: #6e6e6b;
+}
+.hero-imagen-perfil {
+  width: 200px;
+  height: 200px;
+  /* border-radius: 50%; en bootstrap sería clase rounded-circle*/
+  margin: 20px;
+}
+.hero-inferior {
+  background-color: rgb(218, 211, 211);
+}
+.hero-inferior-imagen {
+  /*border-color: blue;*/
+  /*border: 2px solid red;*/
+  padding: 10px;
+  margin: 10px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.seccion-oscura {
+  color: white;
+  background-color: #1b1b32;
+}
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0; /*15 arriba y abajo y 0 iz y der*/
+  font-family: "Rubik Dirt", cursive; /*sino se encuentra este tipo de letra entonces se aplica cursive */
+}
+.seccion-texto {
+  font-size: 1.2rem;
+}
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+.texto-negro {
+  color: black;
+}
+.texto-blanco {
+  color: white;
+}
+.btn-info {
+  font-size: 1.1rem;
+  margin: 10px;
+}
+/* Experiencia*/
+
+.experiencia {
+  background-color: #f5f6f7;
+  padding: 40px 40px 60px 40px;
+  margin: 10px;
+}
+.experiencia i {
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: black;
+  border-radius: 50%;
+  padding: 8px 18px;
+}
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  background-color: #1b1b32;
+  color: white;
+}
+/*
+.experiencia .row div {
+  height: 250px;
+  background-color: purple;
+  border: 3px solid orange;
+}*/
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/*badges*/
+
+.badges-contenedor {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
+/*sobre mi*/
+.sobre-mi {
+  padding: 10px;
+  height: 500px;
+}
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+.contenedor {
+  background-color: #1b1b32;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Rubik Dirt", cursive; /*sino se encuentra este tipo de letra entonces se aplica cursive */
+}
+
+/*Mis proyectos*/
+.proyectos-recientes {
+  padding: 40px;
+}
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1; /*opaco*/
+}
+.proyecto:hover img {
+  opacity: 0.2;
+}
+.proyectos-contenedor {
+  margin-bottom: 40px;
+}
+.proyectos-contenedor i {
+  padding: 8px 18px;
+}
+.overlay {
+  transition: all 0.2s ease-in-out;
+  opacity: 0; /*transparente*/ /*invisible*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay .iconos-contenedor {
+  display: flex;
+}
+.overlay i {
+  color: black;
+  font-size: 60px;
+}
+/*Articulos*/
+.articulos {
+  min-height: 300px;
+  padding: 30px;
+}
+.articulos card {
+  width: 80%;
+  max-width: 600px;
+}
+.articulos .card-header {
+  font-weight: bold;
+}
+.espacio-encima-boton {
+  margin-top: 50px;
+}
+/*testiomonios*/
+.testimonios {
+  padding: 40px 40px 80px 40px;
+}
+.testimonios .carousel {
+  max-width: 800px;
+}
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Shar Tech Mono", monospace;
+}
+.testimonio-info p {
+  margin-bottom: 0;
+}
+.testimonio-info .cliente {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+.testimonio-info .cargo {
+  font-size: 0.9rem;
+  color: #656060;
+}
+/*carousel*/
+.carousel item {
+  height: 500px;
+}
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*contacto*/
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+}
+.contacto .descripcion:hover {
+  color: white;
+  font-size: 1.2rem;
+}
+.contacto button {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.2em 2em;
+  margin: 5px;
+  border-radius: 100px;
+}
+.contacto button i {
+  color: white;
+  font-size: 1.2em;
+  transition: all 0.2s ease-in-out;
+}
+.contacto button:hover i {
+  color: black;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
+/*pie de página(footer)*/
+footer {
+  min-height: 500px;
+}
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: "Quicksand", sans-serif;
+}
+/*iconos redes sociales*/
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease in;
+}
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease in;
+}
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+.derechos-autor {
+  padding: 25px;
+  font-size: 15px;
+  color: #aeaeae;
+}
+/*Adaptable responsivo */
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+  .overlay i {
+    font-size: 40px;
+  }
+}
+@media screen and(max-width: 767px) {
+  .navbar-brand {
+    /*en dispositivos de ancho máximo de 767 no se muesstra el icono*/
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  /*a partir de los 700pixeles se va a aplicar este estilo*/
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+  @media screen and(max-width: 800px) {
+    /*para disp. mas pequeños de 800px de ancho se cambia altura y anchura de imagen y tamaño de texto*/
+    .testimonio-imagen {
+      height: 120px;
+      width: 120px;
+    }
+    .testimonio-texto {
+      font-size: 18px;
+    }
+  }
+}
